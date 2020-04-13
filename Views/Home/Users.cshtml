@@ -1,0 +1,8 @@
+@model viewmodel_fun.Models.User[]
+
+<div class="text-center">
+    <h1 class="display-4">Here are some Users!</h1>
+    @foreach(var user in Model){
+        <p>@user.FirstName @user.LastName</p>
+    }
+</div>
